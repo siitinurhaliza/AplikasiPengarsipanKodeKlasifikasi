@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/nota"
+        android:title="Nota Pengeluaran Barang"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/penyerahan"
+        android:title="BA.Serah Terima"
+        app:showAsAction="ifRoom" />
+
+</menu>

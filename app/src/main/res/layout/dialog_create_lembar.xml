@@ -1,0 +1,49 @@
+<!-- Layout XML file for the dialog to create a new Lembar -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/namaBarang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama Barang" />
+
+    <EditText
+        android:id="@+id/merk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Merk" />
+
+    <EditText
+        android:id="@+id/vol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Volume" />
+
+    <EditText
+        android:id="@+id/satuan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Satuan" />
+
+    <EditText
+        android:id="@+id/hargaSatuan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Harga Satuan" />
+
+    <EditText
+        android:id="@+id/jumlah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Jumlah" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Simpan" />
+</LinearLayout>

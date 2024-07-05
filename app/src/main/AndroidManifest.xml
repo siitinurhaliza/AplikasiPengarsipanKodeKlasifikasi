@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sitinurhaliza.pbl.aplikasipengarsipankodeklasifikasi">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo5"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@drawable/logo5"
+        android:supportsRtl="true"
+        android:theme="@style/Base.Theme.AplikasiPengarsipanKodeKlasifikasi">
+<!--        <activity-->
+<!--            android:name=".fragments.BAFragment"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".fragments.NotaFragment"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".fragments.BarangFragment"-->
+<!--            android:exported="false" />-->
+        <activity
+            android:name=".create.CreateLpbph1Activity"
+            android:exported="false" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.sitinurhaliza.pbl.aplikasipengarsipankodeklasifikasi.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".activities.PrintLpbphActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.LpbphActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.NpbphActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.MediaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".update.UpdateSptActivity"
+            android:exported="false" />
+        <activity
+            android:name=".update.UpdateSpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".create.CreateKlasifikasiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".create.CreateLpbphActivity"
+            android:exported="false" />
+        <activity
+            android:name=".create.CreateSifatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".create.CreateUnitActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.SptActivity"
+            android:exported="false" />
+        <activity
+            android:name=".create.CreateSpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".create.CreateSptActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.SpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.SifatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.UnitActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.JenisActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.FragmentActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activities.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
